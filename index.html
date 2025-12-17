@@ -1,379 +1,281 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="style.css">
-    <title>car rental</title>
+    <title>LuxCar Fernando - Alquiler de Autos Premium</title>
 </head>
+
 <body>
-    <nav class="nav--bar">
-        <div class="container">
-            <div class="nav--bar-logo">
-                <img src="images/logo5-removebg-preview.png" alt="Logo" class="nav--image">
+    <header>
+        <nav class="nav--bar">
+            <div class="container">
+                <div class="nav--bar-logo">
+                    <img src="images/logo5-removebg-preview.png" alt="Logo de LuxCar" class="nav--image">
+                </div>
+                <div class="nav--bar-phone">
+                    <p><i class="fa-solid fa-phone"></i> +251 939191956</p>
+                </div>
+                <div class="menu--div">
+                    <ul class="menu">
+                        <li><a href="#Home">Inicio</a></li>
+                        <li><a href="#About">Nosotros</a></li>
+                        <li><a href="#Vehicles">Vehículos</a></li>
+                        <li><a href="#Contact">Contacto</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="nav--bar-phone">
-               <p><i class="fa-solid fa-phone"></i>  +251 939191956</p>
-           </div>
-          <div class="menu--div">
-            <ul class="menu">
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Vehicles">Vehicles</a></li>
-                <li><a href="#Contact">Contact</a></li>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home--page" id="Home">
+            <div class="home--page--heading2">
+                <h1 class="home--page--heading">Servicio Fácil de Alquiler de Autos</h1>
+                <h3>Alquila un auto al mejor precio</h3>
+            </div>
+
+            <div class="home--page--form">
+                <form class="form">
+                    <input type="text" placeholder="Lugar de recogida">
+                    <input type="text" placeholder="Lugar de entrega">
+                    <input type="text" placeholder="Fecha de recogida" onfocus="(this.type='date')"
+                        onblur="if(this.value==''){this.type='text'}">
+                    <input type="time" placeholder="Hora de recogida">
+                    <input type="text" placeholder="Fecha de entrega" onfocus="(this.type='date')"
+                        onblur="if(this.value==''){this.type='text'}">
+                    <input type="time" placeholder="Hora de entrega">
+                    <button type="submit" class="home--page--button">Buscar</button>
+                </form>
+            </div>
+            <div class="home--page--last">
+                <h3><i class="fa-solid fa-chevron-right"></i>&nbsp;&nbsp;Obtén 30% de descuento</h3>
+                <h3><i class="fa-solid fa-chevron-right"></i>&nbsp;&nbsp;Forma fácil de alquilar</h3>
+                <h3><i class="fa-solid fa-chevron-right"></i>&nbsp;&nbsp;Varios Vehículos</h3>
+                <h3><i class="fa-solid fa-chevron-right"></i>&nbsp;&nbsp;Descuento Exclusivo</h3>
+            </div>
+        </section>
+
+        <section class="about--page" id="About">
+            <div class="about--page--all">
+                <h4>Encuentra las mejores ofertas de alquiler en la ciudad</h4>
+
+                <h3>Somos LuxCar Fernando</h3>
+                <p> Somos un proveedor de servicios de alquiler de autos con tarifas diarias, semanales e incluso
+                    mensuales para tus viajes de negocios o placer. Nos esforzamos por brindar a nuestros clientes
+                    soluciones de transporte convenientes y asequibles, ofreciendo vehículos de alta calidad y un
+                    servicio al cliente excepcional. Enfócate en tus planes y experiencias, nosotros nos encargamos del
+                    transporte. Nuestros conductores profesionales y corteses harán que tu estancia sea totalmente libre
+                    de preocupaciones.
+                </p>
+                <div class="about--page--service">
+                    <h3>Lo que te ofrecemos</h3>
+                    <div class="about--page--info">
+                        <ul class="about--page--info-ul">
+                            <li><i class="fa-solid fa-money-check-dollar"></i>&nbsp;Servicio de Calidad Premium</li>
+                            <li><i class="fa-solid fa-screwdriver-wrench"></i>&nbsp;Vehículos en Excelente Estado</li>
+                            <li><i class="fa-solid fa-shield-halved"></i>&nbsp;Autos Confiables</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vehicle--page--original" id="Vehicles">
+            <h2>Nuestros Vehículos</h2>
+            <div class="vehicle--grid">
+                <!-- Ford -->
+                <div class="vehicle--page">
+                    <img src="images/ford.jpg" alt="Ford SUV">
+                    <div class="vehicle--info">
+                        <div class="left-vehicle-info">
+                            <p><i class="fa-solid fa-person"></i> 5 Personas</p>
+                            <p><i class="fa-solid fa-car-side"></i> Manual</p>
+                            <p><i class="fa-solid fa-gas-pump"></i> Gasolina</p>
+                        </div>
+                        <div class="right-vehicle-info">
+                            <p><i class="fa-solid fa-calendar-days"></i> 2022</p>
+                            <p><i class="fa-solid fa-money-check-dollar"></i> $50/Día</p>
+                            <button>Rentar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- V8 -->
+                <div class="vehicle--page">
+                    <img src="images/v8.jpg" alt="Toyota Land Cruiser V8">
+                    <div class="vehicle--info">
+                        <div class="left-vehicle-info">
+                            <p><i class="fa-solid fa-person"></i> 7 Personas</p>
+                            <p><i class="fa-solid fa-car-side"></i> Automático</p>
+                            <p><i class="fa-solid fa-gas-pump"></i> Diesel</p>
+                        </div>
+                        <div class="right-vehicle-info">
+                            <p><i class="fa-solid fa-calendar-days"></i> 2023</p>
+                            <p><i class="fa-solid fa-money-check-dollar"></i> $120/Día</p>
+                            <button>Rentar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tesla -->
+                <div class="vehicle--page">
+                    <img src="images/tesla.jpg" alt="Tesla Model 3">
+                    <div class="vehicle--info">
+                        <div class="left-vehicle-info">
+                            <p><i class="fa-solid fa-person"></i> 5 Personas</p>
+                            <p><i class="fa-solid fa-car-side"></i> Automático</p>
+                            <p><i class="fa-solid fa-bolt"></i> Eléctrico</p>
+                        </div>
+                        <div class="right-vehicle-info">
+                            <p><i class="fa-solid fa-calendar-days"></i> 2022</p>
+                            <p><i class="fa-solid fa-money-check-dollar"></i> $100/Día</p>
+                            <button>Rentar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lamborghini -->
+                <div class="vehicle--page">
+                    <img src="images/lambargini.jpg" alt="Lamborghini">
+                    <div class="vehicle--info">
+                        <div class="left-vehicle-info">
+                            <p><i class="fa-solid fa-person"></i> 2 Personas</p>
+                            <p><i class="fa-solid fa-car-side"></i> Automático</p>
+                            <p><i class="fa-solid fa-gas-pump"></i> Gasolina</p>
+                        </div>
+                        <div class="right-vehicle-info">
+                            <p><i class="fa-solid fa-calendar-days"></i> 2022</p>
+                            <p><i class="fa-solid fa-money-check-dollar"></i> $500/Día</p>
+                            <button>Rentar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ferrari -->
+                <div class="vehicle--page">
+                    <img src="images/ferari.jpg" alt="Ferrari">
+                    <div class="vehicle--info">
+                        <div class="left-vehicle-info">
+                            <p><i class="fa-solid fa-person"></i> 2 Personas</p>
+                            <p><i class="fa-solid fa-car-side"></i> Automático</p>
+                            <p><i class="fa-solid fa-gas-pump"></i> Gasolina</p>
+                        </div>
+                        <div class="right-vehicle-info">
+                            <p><i class="fa-solid fa-calendar-days"></i> 2023</p>
+                            <p><i class="fa-solid fa-money-check-dollar"></i> $600/Día</p>
+                            <button>Rentar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hilux -->
+                <div class="vehicle--page">
+                    <img src="images/hilux.jpg" alt="Toyota Hilux">
+                    <div class="vehicle--info">
+                        <div class="left-vehicle-info">
+                            <p><i class="fa-solid fa-person"></i> 5 Personas</p>
+                            <p><i class="fa-solid fa-car-side"></i> Manual</p>
+                            <p><i class="fa-solid fa-gas-pump"></i> Diesel</p>
+                        </div>
+                        <div class="right-vehicle-info">
+                            <p><i class="fa-solid fa-calendar-days"></i> 2023</p>
+                            <p><i class="fa-solid fa-money-check-dollar"></i> $80/Día</p>
+                            <button>Rentar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- steps page -->
+        <section class="steps--page">
+            <h2>PASOS PARA RESERVAR</h2>
+            <div class="steps--page--original">
+                <div class="steps--page--info">
+                    <img src="images/chooce a car.jpg" alt="Paso 1: Elige tu auto">
+                    <span>1</span>
+                    <h3>Elige tu auto</h3>
+                </div>
+                <div class="steps--page--info">
+                    <img src="images/send request.jpg" alt="Paso 2: Envíanos una solicitud">
+                    <span>2</span>
+                    <h3>Envíanos una solicitud</h3>
+                </div>
+                <div class="steps--page--info">
+                    <img src="images/take a car.jpg" alt="Paso 3: Recoge tu auto">
+                    <span>3</span>
+                    <h3>Recoge tu auto</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact page -->
+        <section class="contact--page--original" id="Contact">
+            <div class="contact--page">
+                <h2>EL MEJOR SERVICIO AL CLIENTE</h2>
+                <h4>Escríbenos un correo o llámanos hoy mismo para obtener las mejores ofertas de alquiler.</h4>
+                <div class="contact--details">
+                    <h4><i class="fa-solid fa-location-dot"></i> Bole Edna Mall, Oficina 123</h4>
+                    <h4><i class="fa-solid fa-location-dot"></i> Megenagna Zefnesh Mall, Oficina 23</h4>
+                    <h4><i class="fa-solid fa-phone"></i> +251 939 191 956</h4>
+                </div>
+            </div>
+            <div class="map--frame">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.7301061531266!2d38.784286017443875!3d8.9969637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8502fe44f345%3A0x209cbe597069517f!2sEdna%20Mall!5e0!3m2!1sen!2set!4v1709578039548!5m2!1sen!2set"
+                    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="Mapa de ubicación de LuxCar"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer page -->
+    <footer class="footer--page">
+        <div class="footer--page--info">
+            <div class="footer--page--links">
+                <h3>Empresa</h3>
+                <ul>
+                    <li>Sobre nosotros</li>
+                    <li>Planes de precios</li>
+                    <li>Nuestros vehículos</li>
+                    <li>Contáctanos</li>
+                </ul>
+            </div>
+            <div class="footer--page--links">
+                <h3>Soporte</h3>
+                <ul>
+                    <li>Centro de ayuda</li>
+                    <li>Haz una pregunta</li>
+                    <li>Política de privacidad</li>
+                    <li>Términos y condiciones</li>
+                </ul>
+            </div>
+            <div class="footer--page--location">
+                <h3>Ubicación</h3>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Bole Edna Mall</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Megenagna Zefnesh Mall</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+
+        <div class="footer--page--social-media-original">
+            <ul class="footer-social-media">
+                <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a></li>
             </ul>
         </div>
-        </div>
-           
-    </nav>
-      
-      <div class="home--page">
-        <div class="home--page--heading2">
-            <h1 class="home--page--heading">Easy Car Rental Service in Ethiopia</h1>
-            <h3>rent a car at best price</h3>
-        </div>
-
-        <div class="home--page--form">
-            <form class="form">
-                <input type="location" placeholder="Pick-up-location">
-                <input type="location" placeholder="Drop-off-location">
-                <input type="text" placeholder="Pick-up-date" onfocus="(this.type='date')">
-                <input type="time" placeholder="pick-off-time">
-                <input type="text" placeholder="Drop-off-date" onfocus="(this.type='date')">
-                <input type="time" placeholder="Drop-off-time">
-                <button class="home--page--button">Search</button>
-            </form>
-        </div>
-         <div class="home--page--last">
-            <h3><i class="fa-solid fa-chevron-right"></i>&nbsp;&nbsp;Get 30% off</h3>
-            <h3><i class="fa-solid fa-chevron-right"></i>&nbsp;&nbsp;Get Easy Way to rent</h3>
-            <h3><i class="fa-solid fa-chevron-right"></i>&nbsp;&nbsp;Various Vehicles</h3>
-            <h3><i class="fa-solid fa-chevron-right"></i>&nbsp;&nbsp; Exclusive Discount</h3>
-         </div>
-         
-
-      </div>
-   <!-- end of home page -->
-
-   <!-- About page -->
-   <div class="about--page" id="About">
-      <div class="about--page--all">
-        <img src="" alt="">
-        <h4>Find the best rental car deals in Addis Ababa</h4>
-        
-         <h3>We Are sami's car rental</h3>
-          <p> We are a fully car rental service provider in addis abeba ,
-             Ethiopia with daily, weekly even monthly rates for your business or
-             pleasure travel company, we strive to provide our 
-             customers with convenient and affordable transportation 
-             solutions, while also offering top-quality vehicles and exceptional customer
-             service. so they can focus on their plan and experiences, rather than worrying about 
-             transportational and counteous drivers who will make your stay in Ethiopia
-             a worry-free one
-          </p>
-          <div class="about--page--service">
-            <h3>We will give you </h3>
-            <div class="about--page--info">
-               <ul class="about--page--info-ul">
-                  <li><i class="fa-solid fa-money-check-dollar"></i>&nbsp;Good service & Quality Service</li>
-                  <li><i class="fa-solid fa-screwdriver-wrench"></i>&nbsp;Well conditioned vehicles</li>
-                  <li><i class="fa-solid fa-shield-halved"></i>&nbsp;Dependable cars</li>
-               </ul>
-            </div>
-          </div>
-         
-      </div>
-   </div>
-
-   
-   <!-- Vehicle page -->
-   <div class="vehicle--page--original" id="Vehicles">
-    <h2>Our vehicles</h2>
-    <div class="vehicle--page">
-    
-        <img src="images/ford.jpg" alt="">
-    
-     <div class="vehicle--info">
-         <div class="left-vehicle-info">
-            <p><i class="fa-solid fa-person"></i>--people</p>
-            <p><i class="fa-solid fa-car-side"></i> Manual</p>
-            <p><i class="fa-solid fa-gas-pump"></i> Gasoline</p>
-         </div>
-         <div class="right-vehicle-info">
-            <p><i class="fa-solid fa-calendar-days"></i> Model</p>
-            <p> <i class="fa-solid fa-money-check-dollar"></i> Price</p>
-            <button>Rent</button>
-         </div>
-     </div>
-   </div>
-   <div class="vehicle--page">
-    
-    <img src="images/v8.jpg" alt="">
-
- <div class="vehicle--info">
-     <div class="left-vehicle-info">
-        <p><i class="fa-solid fa-person"></i> --people</p>
-        <p><i class="fa-solid fa-car-side"></i> Manual</p>
-        <p><i class="fa-solid fa-gas-pump"></i> Gasoline</p>
-     </div>
-     <div class="right-vehicle-info">
-        <p><i class="fa-solid fa-calendar-days"></i> Model</p>
-        <p> <i class="fa-solid fa-money-check-dollar"></i>Price</p>
-        <button>Rent</button>
-     </div>
- </div>
-</div>
-<div class="vehicle--page">
-    
-    <img src="images/tesla.jpg" alt="">
-
- <div class="vehicle--info">
-     <div class="left-vehicle-info">
-        <p><i class="fa-solid fa-person"></i>--people</p>
-        <p><i class="fa-solid fa-car-side"></i> Manual</p>
-        <p><i class="fa-solid fa-gas-pump"></i> Gasoline</p>
-     </div>
-     <div class="right-vehicle-info">
-        <p<i class="fa-solid fa-calendar-days"></i> Model</p>
-        <p><i class="fa-solid fa-money-check-dollar"></i> Price</p>
-        <button>Rent</button>
-     </div>
- </div>
-</div>
-<div class="vehicle--page">
-    
-    <img src="images/chevrolet.jpg" alt="">
-
- <div class="vehicle--info">
-     <div class="left-vehicle-info">
-        <p><i class="fa-solid fa-person"></i> --people</p>
-        <p><i class="fa-solid fa-car-side"></i> Manual</p>
-        <p><i class="fa-solid fa-gas-pump"></i> Gasoline</p>
-     </div>
-     <div class="right-vehicle-info">
-        <p><i class="fa-solid fa-calendar-days"></i> Model</p>
-        <p><i class="fa-solid fa-money-check-dollar"></i> Price</p>
-        <button>Rent</button>
-     </div>
- </div>
-</div>
-<div class="vehicle--page">
-    
-    <img src="images/lambargini.jpg" alt="">
-
- <div class="vehicle--info">
-     <div class="left-vehicle-info">
-        <p><i class="fa-solid fa-person"></i>--people</p>
-        <p><i class="fa-solid fa-car-side"></i> Manual</p>
-        <p><i class="fa-solid fa-gas-pump"></i> Gasoline</p>
-     </div>
-     <div class="right-vehicle-info">
-        <p><i class="fa-solid fa-calendar-days"></i> Model</p>
-        <p><i class="fa-solid fa-money-check-dollar"></i> Price</p>
-        <button>Rent</button>
-     </div>
- </div>
-</div>
-<div class="vehicle--page">
-    
-    <img src="images/ferari.jpg" alt="">
-
- <div class="vehicle--info">
-     <div class="left-vehicle-info">
-        <p><i class="fa-solid fa-person"></i>--people</p>
-        <p><i class="fa-solid fa-car-side"></i> Manual</p>
-        <p><i class="fa-solid fa-gas-pump"></i> Gasoline</p>
-     </div>
-     <div class="right-vehicle-info">
-        <p><i class="fa-solid fa-calendar-days"></i> Model</p>
-        <p><i class="fa-solid fa-money-check-dollar"></i> Price</p>
-        <button>Rent</button>
-     </div>
- </div>
-</div>
-<div class="vehicle--page">
-    
-   <img src="images/corolla.jpg" alt="">
-
-<div class="vehicle--info">
-    <div class="left-vehicle-info">
-       <p><i class="fa-solid fa-person"></i>--people</p>
-       <p><i class="fa-solid fa-car-side"></i> Manual</p>
-       <p><i class="fa-solid fa-gas-pump"></i> Gasoline</p>
-    </div>
-    <div class="right-vehicle-info">
-       <p><i class="fa-solid fa-calendar-days"></i> Model</p>
-       <p><i class="fa-solid fa-money-check-dollar"></i> Price</p>
-       <button>Rent</button>
-    </div>
-</div>
-</div>
-<div class="vehicle--page">
-    
-   <img src="images/hilux.jpg" alt="">
-
-<div class="vehicle--info">
-    <div class="left-vehicle-info">
-       <p><i class="fa-solid fa-person"></i>--people</p>
-       <p><i class="fa-solid fa-car-side"></i> Manual</p>
-       <p><i class="fa-solid fa-gas-pump"></i> Gasoline</p>
-    </div>
-    <div class="right-vehicle-info">
-       <p><i class="fa-solid fa-calendar-days"></i> Model</p>
-       <p><i class="fa-solid fa-money-check-dollar"></i> Price</p>
-       <button>Rent</button>
-    </div>
-</div>
-</div>
-<div class="vehicle--page">
-    
-   <img src="images/suzuki.jpg" alt="">
-
-<div class="vehicle--info">
-    <div class="left-vehicle-info">
-       <p><i class="fa-solid fa-person"></i>--people</p>
-       <p><i class="fa-solid fa-car-side"></i> Manual</p>
-       <p><i class="fa-solid fa-gas-pump"></i> Gasoline</p>
-    </div>
-    <div class="right-vehicle-info">
-       <p><i class="fa-solid fa-calendar-days"></i> Model</p>
-       <p><i class="fa-solid fa-money-check-dollar"></i> Price</p>
-       <button>Rent</button>
-    </div>
-</div>
-</div>
-<div class="vehicle--page">
-    
-   <img src="images/chevrolet.jpg" alt="">
-
-<div class="vehicle--info">
-    <div class="left-vehicle-info">
-       <p><i class="fa-solid fa-person"></i>--people</p>
-       <p><i class="fa-solid fa-car-side"></i> Manual</p>
-       <p><i class="fa-solid fa-gas-pump"></i> Gasoline</p>
-    </div>
-    <div class="right-vehicle-info">
-       <p><i class="fa-solid fa-calendar-days"></i> Model</p>
-       <p><i class="fa-solid fa-money-check-dollar"></i> Price</p>
-       <button>Rent</button>
-    </div>
-</div>
-</div>
-<div class="vehicle--page">
-    
-   <img src="images/ford.jpg" alt="">
-
-<div class="vehicle--info">
-    <div class="left-vehicle-info">
-       <p><i class="fa-solid fa-person"></i>--people</p>
-       <p><i class="fa-solid fa-car-side"></i> Manual</p>
-       <p><i class="fa-solid fa-gas-pump"></i> Gasoline</p>
-    </div>
-    <div class="right-vehicle-info">
-       <p><i class="fa-solid fa-calendar-days"></i> Model</p>
-       <p><i class="fa-solid fa-money-check-dollar"></i> Price</p>
-       <button>Rent</button>
-    </div>
-    
-</div>
-</div>
-<div class="vehicle--page">
-    
-   <img src="images/tesla.jpg" alt="">
-
-<div class="vehicle--info">
-    <div class="left-vehicle-info">
-       <p><i class="fa-solid fa-person"></i>--people</p>
-       <p><i class="fa-solid fa-car-side"></i> Manual</p>
-       <p><i class="fa-solid fa-gas-pump"></i> Gasoline</p>
-    </div>
-    <div class="right-vehicle-info">
-       <p><i class="fa-solid fa-calendar-days"></i> Model</p>
-       <p><i class="fa-solid fa-money-check-dollar"></i> Price</p>
-       <button>Rent</button>
-    </div>
-</div>
-</div>
-   </div>
-   <!-- steps page -->
-   <div class="steps--page">
-      <h2>STEPS OF BOOKING</h2>
-      <div class="steps--page--orginal">
-         <div class="steps--page--info">
-            <img src="images/chooce a car.jpg"  alt="step 1">
-            <span>1</span>
-            <h3>choose your car</h3>
-         </div>
-         <div class="steps--page--info">
-            <img src="images/send request.jpg"  alt="step 1" alt="step 2">
-            <span>2</span>
-            <h3>send us a request</h3>
-         </div>
-         <div class="steps--page--info">
-            <img src="images/take a car.jpg"  alt="step 1" alt="step 3">
-            <span>3</span>
-            <h3>take your car</h3>
-         </div>
-      </div>
-    
-   </div>
-   <!-- contact page -->
-   <div class="contact--page--original" id="Contact">
-      <div class="contact--page">
-            <h2>WE CAN GIVE YOU BEST CUSTOMER SERVICE</h2>
-            <h4>Write us an email or give us a call today
-            for the best rental in Addis Abeba
-         </h4>
-         <div>
-            <h4><i class="fa-solid fa-location-dot"></i> Bole Edna mall room 123</h4>
-            <h4><i class="fa-solid fa-location-dot"></i> Megenagna Zefnesh mall room 23</h4>
-            <h4><i class="fa-solid fa-phone"></i> +251 9 xxxxxxx</h4>
-         </div>
-      </div>
-      <div class="map--frame">
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.7301061531266!2d38.784286017443875!3d8.9969637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b8502fe44f345%3A0x209cbe597069517f!2sEdna%20Mall!5e0!3m2!1sen!2set!4v1709578039548!5m2!1sen!2set"
-          width="100%" height="250" style="border:0;" 
-          allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-   </div>
-   <!-- footer page -->
-   <footer class="footer--page">
-     <div class="footer--page--info">
-      <div class="footer--page--links">
-         <h3>Company</h3>
-        <li>About us</li>
-        <li>Pricing Plans</li>
-        <li>Our Vehicles</li>
-        <li>Contact us</li>
-      </div>
-      <div class="footer--page--links">
-         <h3>Support</h3>
-        <li>Help Center</li>
-        <li>Ask question</li>
-        <li>privacy policy</li>
-        <li>Terms % conditions</li>
-      </div>
-      <div class="footer--page--location">
-        <h4>location</h4>
-        <li><i class="fa-solid fa-location-dot"></i> Bole Edna mall</li>
-        <li><i class="fa-solid fa-location-dot"></i> megenagne zefnesh mall</li>
-      </div>
-     </div>
-     <hr>
-
-      <div class="footer--page--social-media-original">
-         <ul class="footer-social-media">
-             <li><a href=""><i class="fab fa-facebook"></i></a></li>
-             <li><a href=""><i class="fab fa-instagram"></i></a></li>
-             <li><a href=""><i class="fab fa-twitter"></i></a></li>
-             <li><a href=""><i class="fab fa-tiktok"></i></a></li>
-         </ul>
-       </div>
-      
-   </footer>
-   
+    </footer>
 </body>
+
 </html>
